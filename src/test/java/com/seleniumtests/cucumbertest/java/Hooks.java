@@ -19,10 +19,10 @@ public class Hooks {
 	RunCukeBase df= new RunCukeBase();
 	ITestResult result;
 	
-	//this method is to close the browser after each scenario. //Scenario scenario
+	//this method is to close the browser after each scenario.
 	@After()
-	public void embedScreenshot() throws IOException {
-    /*    try {
+	public void embedScreenshot(Scenario scenario) throws IOException {
+        try {
             if (scenario.isFailed()) {
                 final byte[] screenshot = ((TakesScreenshot) df.driver)
                         .getScreenshotAs(OutputType.BYTES);
@@ -34,7 +34,7 @@ public class Hooks {
         } catch (ClassCastException cce) {
           cce.printStackTrace();
         }
-     */   
+        
         df.tearDown();
     }
 	
