@@ -150,6 +150,11 @@
 						<argument>--tags</argument>
 						<argument>@run</argument>
                     </arguments>
+					<successCodes>
+						<successCode>2</successCode>
+						<successCode>1</successCode>
+						<successCode>0</successCode>
+					</successCodes>
                	</configuration>
             </plugin>
             <plugin>
